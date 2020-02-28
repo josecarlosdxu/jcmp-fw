@@ -1,0 +1,14 @@
+// Las utilidades son de alta especificidad, clases muy explícitas.
+// Se utilizan como reemplazos y clases de ayuda.
+// Por lo general son una línea de código y tienen !important.
+
+// Ejemplos:
+
+// Text-align, float, position, display etc.
+
+// https://www.iotacss.com/docs/utilities/
+
+%togglecheck, .togglecheck{
+	display: none;
+}
+
