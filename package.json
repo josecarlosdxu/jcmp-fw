@@ -1,0 +1,14 @@
+{
+  "name": "jcmp-fw",
+  "version": "1.0.0",
+  "description": "SCSS ITCSS base fremework",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path scss src/scss/main.scss dev/css/main.css"
+  },
+  "author": "Jose Carlos Madrid",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
