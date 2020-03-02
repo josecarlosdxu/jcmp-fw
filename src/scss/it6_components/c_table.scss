@@ -1,4 +1,3 @@
-
 table {
   border-collapse: collapse;
   border: 1px solid var(--tableBorderColor);
@@ -10,72 +9,37 @@ table td {
   font-feature-settings: "tnum";
 }
 
-.table-stickyhead tr:nth-child(1) th {
+.table.sticky tr:nth-child(1) th {
   text-align: inherit;
-  padding: 1rem;
+  padding: 0.8rem 1rem 1.2rem;
+  vertical-align: top;
 }
 
-.table-stickyhead {
+.table.sticky thead {
   background-color: var(--tableTheadBackground);
   color: var(--tableTheadColor);
   position: sticky;
   top: 0;
   z-index: 100;
-
- /*box-shadow: 1px 1px var(--bordercolor, gainsboro);*/
-}
-
-.table-stickyhead tr:nth-child(1) th:last-child {
- /*box-shadow: 1px 1px var(--bordercolor, gainsboro);*/
-}
-
-@-moz-document url-prefix() {
-  /*.table-stickyhead tr:nth-child(1) {
-    border: 1px solid var(--bordercolor, gainsboro);
-    left: -1px;
-  }*/
-
-  table tbody tr:nth-child(2n) {
-   /* box-shadow: -1px 0 var(--bordercolor, gainsboro) inset;*/
-  }
 }
 
 table tbody td {
   padding: 1rem;
 }
 
-table tbody.striped tr:nth-child(2n) {
-   background:var(--strippedBg);/*------------------*/
-
- 
-  
+.table.striped tbody tr:nth-child(2n) {
+  background: var(--strippedBg);
 }
 
-body:not(.dark) table tbody.striped tr:nth-child(2n) {
- 
-     mix-blend-mode: multiply;
-  
-  
+body:not(.dark) .table.striped tbody tr:nth-child(2n) {
+  mix-blend-mode: multiply;
 }
-
-
-
-
-
-
 
 .table-item--num,
-.table-stickyhead tr th.table-item--num {
+.table.sticky tr th.table-item--num {
   text-align: right;
 }
 
 .table-item--actions {
   text-align: center;
 }
-
-
-
-
-
-
-

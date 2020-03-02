@@ -1,41 +1,66 @@
 :root {
 	--backgroundColor: var(--neutral10);
-	--color: var(--dark60);
-	--tableTheadBackground: var(--neutral20);
-	--tableBorderColor: var(--neutral20);
-	--tableTheadColor: var(--neutral20);
+	--color: var(--neutral60);
+
+
+
+
+
+	--tableTheadBackground: var(--neutral40);
+	--tableTheadColor: white;
+	--tableBorderColor: var(--neutral20);	
 	--strippedBg: var(--neutral10);
+	--tableTbodyBackground: white;
+	--buttonBackground: var(--neutral40);
+	--buttonColor: var(--neutral10);
+	--buttonAccent: var(--neutral40);
+	--buttonHoverBackground: var(--neutral20);
+	--buttonHoverColor: var(--neutral60);
+
+
 }
 
 [class*="accent"] {
 	--checkboxAccent: var(--accent60);
-	--buttonHoverColor: var(--accent20);
+	--buttonBackground: var(--accent60);
+	--buttonColor: var(--accent10);
+	--buttonAccent: var(--accent60);
+	--buttonHoverBackground: var(--accent40);
+	--buttonHoverColor: var(--accent80);
+}
+
+[class*="primary"] {
+	--checkboxAccent: var(--primary60);
+	--buttonBackground: var(--primary60);
+	--buttonColor: var(--primary20);
+	--buttonAccent: var(--primary60);
+	--buttonHoverBackground: var(--primary40);
+	--buttonHoverColor: var(--primary80);
 }
 
 [class*="danger"] {
 	--checkboxAccent: var(--danger60);
-	--buttonAccent: var(--danger40);
-	--buttonHoverColor: var(--danger20);
 	--buttonBackground: var(--danger60);
 	--buttonColor: var(--danger20);
+	--buttonAccent: var(--danger60);
 	--buttonHoverBackground: var(--danger40);
+	--buttonHoverColor: var(--danger80);
 }
 
 [class*="success"] {
 	--checkboxAccent: var(--success60);
-	--buttonAccent: var(--success40);
+	--buttonAccent: var(--success60);
 	--buttonBackground: var(--success60);
 	--buttonColor: var(--success20);
 	--buttonHoverBackground: var(--success40);
 	--buttonHoverColor: var(--success80);
 }
 
-[class*="primary"] {
-	--checkboxAccent: var(--primary60);
-	--buttonHoverColor: var(--primary20);
-}
-
 [class*="warning"] {
 	--checkboxAccent: var(--warning60);
-	--buttonHoverColor: var(--warning20);
+	--buttonAccent: var(--warning60);
+	--buttonBackground: var(--warning60);
+	--buttonColor: var(--warning20);
+	--buttonHoverBackground: var(--warning40);
+	--buttonHoverColor: var(--warning80);
 }
