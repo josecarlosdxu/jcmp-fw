@@ -1,14 +1,10 @@
 :root {
-	--whiteCheckSVG: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5 21zm5-4l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z' fill='white'/></svg>");
-	--whiteCircleSVG: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><circle cx='5' cy='5' r='3.5' fill='white'/></svg>");
 	--checkboxAccent: var(--primary60);
 	--checkboxOpacity: 0.4;	
 	--inputRadius: 25%;
 	--checkboxH: 1.25rem;
 	--checkboxW: var(--checkboxH);
 }
-
-
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -104,9 +100,4 @@ input[type="radio"]::after {
 
 input[type="radio"]:checked::after {
 	opacity: 1;
-}
-
-label[for] {
-	cursor: pointer;
-	vertical-align: top;
 }

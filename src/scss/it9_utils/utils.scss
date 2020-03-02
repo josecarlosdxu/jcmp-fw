@@ -39,12 +39,27 @@
 	pointer-events: none;
 	opacity: 0.3;
 	user-select: none;
+
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		pointer-events: auto;		
+		top: 0;
+		left: 0;
+		cursor: not-allowed;
+	}
+
 }
 
 .ml-xs {
 	margin-left: var(--spacing-xs) !important;
 }
-
+.pl-xs {
+	padding-left: var(--spacing-xs) !important;
+}
 .pb-sm {
 	padding-bottom: var(--spacing-sm) !important;
 }

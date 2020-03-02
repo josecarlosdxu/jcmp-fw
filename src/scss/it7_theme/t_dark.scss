@@ -1,0 +1,60 @@
+.dark {
+	--backgroundColor: var(--dark80);
+	--color: var(--neutral40);
+	--tableTheadBackground: var(--neutral60);
+	--tableTheadColor: var(--neutral20);
+	--tableBorderColor: var(--neutral80);
+	--tableTbodyBackground: var(--dark40);
+	--strippedBg: var(--dark20);
+	--buttonBackground: var(--neutral80);
+	--buttonAccent: var(--neutral60);
+	--buttonColor: var(--neutral20);
+	--buttonHoverBackground: var(--neutral60);
+
+
+	[class*="accent"] {
+		//--checkboxAccent: var(--accent60);
+		--buttonBackground: var(--accent80);
+		--buttonColor: var(--accent20);
+		--buttonAccent: var(--accent60);
+		--buttonHoverBackground: var(--accent60);
+		--buttonHoverColor: var(--accent10);
+	}
+
+	[class*="primary"] {
+		//--checkboxAccent: var(--danger60);
+		--buttonBackground: var(--primary80);
+		--buttonColor: var(--primary20);
+		--buttonAccent: var(--primary60);
+		--buttonHoverBackground: var(--primary60);
+		--buttonHoverColor: var(--primary10);
+	}
+
+	[class*="danger"] {
+		//--checkboxAccent: var(--danger60);
+		--buttonBackground: var(--danger80);
+		--buttonColor: var(--danger20);
+		--buttonAccent: var(--danger60);
+		--buttonHoverBackground: var(--danger60);
+		--buttonHoverColor: var(--danger20);
+	}
+
+	[class*="success"] {
+		//--checkboxAccent: var(--success60);
+		--buttonAccent: var(--success60);
+		--buttonBackground: var(--success80);
+		--buttonColor: var(--success20);
+		--buttonHoverBackground: var(--success60);
+		--buttonHoverColor: var(--success10);
+	}
+
+	[class*="warning"] {
+		//--checkboxAccent: var(--warning60);
+		--buttonAccent: var(--warning60);
+		--buttonBackground: var(--warning80);
+		--buttonColor: var(--warning20);
+		--buttonHoverBackground: var(--warning60);
+		--buttonHoverColor: var(--warning20);
+	}
+
+}

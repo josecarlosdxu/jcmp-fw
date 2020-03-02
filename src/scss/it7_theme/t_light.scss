@@ -1,0 +1,41 @@
+:root {
+	--backgroundColor: var(--neutral10);
+	--color: var(--dark60);
+	--tableTheadBackground: var(--neutral20);
+	--tableBorderColor: var(--neutral20);
+	--tableTheadColor: var(--neutral20);
+	--strippedBg: var(--neutral10);
+}
+
+[class*="accent"] {
+	--checkboxAccent: var(--accent60);
+	--buttonHoverColor: var(--accent20);
+}
+
+[class*="danger"] {
+	--checkboxAccent: var(--danger60);
+	--buttonAccent: var(--danger40);
+	--buttonHoverColor: var(--danger20);
+	--buttonBackground: var(--danger60);
+	--buttonColor: var(--danger20);
+	--buttonHoverBackground: var(--danger40);
+}
+
+[class*="success"] {
+	--checkboxAccent: var(--success60);
+	--buttonAccent: var(--success40);
+	--buttonBackground: var(--success60);
+	--buttonColor: var(--success20);
+	--buttonHoverBackground: var(--success40);
+	--buttonHoverColor: var(--success80);
+}
+
+[class*="primary"] {
+	--checkboxAccent: var(--primary60);
+	--buttonHoverColor: var(--primary20);
+}
+
+[class*="warning"] {
+	--checkboxAccent: var(--warning60);
+	--buttonHoverColor: var(--warning20);
+}

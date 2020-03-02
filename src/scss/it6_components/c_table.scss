@@ -1,11 +1,9 @@
 
 table {
   border-collapse: collapse;
-  /*background-color: white;*/
-  color: var(--color, dimgray);
-  /*font-size: var(--fontsize);*/
-  border: 1px solid var(--neutral80);
+  border: 1px solid var(--tableBorderColor);
   table-layout: fixed;
+  background-color: var(--tableTbodyBackground);
 }
 
 table td {
@@ -13,16 +11,13 @@ table td {
 }
 
 .table-stickyhead tr:nth-child(1) th {
-  /*position: sticky;
-  top: -1px;
-  z-index: 100;
-  /*box-shadow: 0 1px var(--bordercolor, gainsboro);
- /* background-color: white;*/
   text-align: inherit;
   padding: 1rem;
 }
 
 .table-stickyhead {
+  background-color: var(--tableTheadBackground);
+  color: var(--tableTheadColor);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -50,8 +45,25 @@ table tbody td {
 }
 
 table tbody.striped tr:nth-child(2n) {
-   background:var(--dark20);/*------------------*/
+   background:var(--strippedBg);/*------------------*/
+
+ 
+  
 }
+
+body:not(.dark) table tbody.striped tr:nth-child(2n) {
+ 
+     mix-blend-mode: multiply;
+  
+  
+}
+
+
+
+
+
+
+
 .table-item--num,
 .table-stickyhead tr th.table-item--num {
   text-align: right;

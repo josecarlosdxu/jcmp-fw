@@ -9,19 +9,24 @@ input[type="button"]
 button,
 [class^="button"],
 .button {
+	background-color: var(--buttonBackground);
+	color: var(--buttonColor);
 	min-width: var(--buttonMinWidth);
 	padding: var(--spacing-xs) var(--spacing-sm) var(--spacing-sm);
 	border-radius: var(--buttonBorderRadius);
 	transition: all 0.1s;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--checkboxAccent));
-	background-blend-mode: overlay;/**/
+	background-image: linear-gradient(var(--buttonAccent), transparent);
+	//background-blend-mode: overlay;/**/
 	/*border: 2px solid transparent;*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	background-origin: border-box;
-	box-shadow: 0 0 1px  var(--checkboxAccent);
+	box-shadow: 0 0 1px  var(--buttonBorderColor);
 }
 
 .button:hover {
-	background-color: var(--checkboxAccent);
+	background-color: var(--buttonHoverBackground);
+	background-size: 100% 0;
 	color: var(--buttonHoverColor);	/*border-color: var(--checkboxAccent);*/
 }
 
