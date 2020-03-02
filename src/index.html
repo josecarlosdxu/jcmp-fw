@@ -7,7 +7,7 @@
   <title><%= titulo %></title>
 </head>
 
-  <body class="dark">
+  <body>
     <h1><%= encabezamiento%></h1>
     <svg class="hidden">
       <defs>
@@ -39,6 +39,7 @@
           <div class="elem center danger60">danger60</div>
           <div class="elem center danger40">danger40</div>
           <div class="elem center danger20">danger20</div>
+          <div class="elem center danger10">danger10</div>
         </section>
         <section class="list">
           <div class="elem center accent80">accent80</div>
@@ -52,6 +53,7 @@
           <div class="elem center warning60">warning60</div>
           <div class="elem center warning40">warning40</div>
           <div class="elem center warning20">warning20</div>
+          <div class="elem center warning10">warning10</div>
         </section>
         <section class="list">
           <div class="elem center neutral80">neutral80</div>
@@ -92,7 +94,13 @@
         </section>
       </article>
       <article>
-        <table class="table sticky primary striped">
+        <article class="flex">
+        <table class="table sticky danger striped">
+          <tfoot>
+            <tr>
+              <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+            </tr>
+          </tfoot>
           <thead class="table-stickyhead">
             <tr>
               <th class="table-item table-item--num">Id</th>
@@ -126,7 +134,36 @@
               </td>
             </tr>
             <tr>
-              <td class="table-item table-item--num">3</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table sticky warning striped ml-xs">
+           <tfoot>
+            <tr>
+              <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+            </tr>
+          </tfoot>
+          <thead class="table-stickyhead">
+            <tr>
+              <th class="table-item table-item--num">Id</th>
+              <th class="table-item table-item--num">Cantidad</th>
+              <th class="table-item">Referencia</th>
+              <th class="table-item">Estado</th>
+              <th class="table-item">Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="table-stickybody striped">
+            <tr>
+              <td class="table-item table-item--num">1 </td>
+              <td class="table-item table-item--num">5000</td>
+              <td class="table-item">ABC-123456789</td>
+              <td class="table-item">En espera</td>
+              <td class="table-item table-item--actions">
+                <input class="switch" type="checkbox">
+              </td>
+            </tr>
+            <tr>
+              <td class="table-item table-item--num">2</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
               <td class="table-item">En espera</td>
@@ -139,32 +176,6 @@
               </td>
             </tr>
             <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-             <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-             <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>

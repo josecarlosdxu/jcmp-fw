@@ -30,9 +30,13 @@
 	justify-content: center;
 	align-items: center
 }
+.text-center {
+	text-align: center !important;
+}
 
 .flex {
-	flex: 1
+	flex: 1;
+	display: flex;
 }
 
 [disabled] {

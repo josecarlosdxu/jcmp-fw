@@ -9,10 +9,32 @@ table td {
   font-feature-settings: "tnum";
 }
 
+.table tfoot {
+  background-color: var(--tableTfootBackground);
+
+  color: var(--tableTfootColor);
+  position: relative;
+  z-index: 1;
+  filter: grayscale(0.4) contrast(120%);
+
+ 
+}
+
+
+.dark .table tfoot {
+   filter: grayscale(0.6) brightness(0.7);
+   
+  
+ 
+}
+
+
+
 .table.sticky tr:nth-child(1) th {
   text-align: inherit;
   padding: 0.8rem 1rem 1.2rem;
   vertical-align: top;
+
 }
 
 .table.sticky thead {
@@ -21,6 +43,7 @@ table td {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 1px var(--tableTheadShadowColor);
 }
 
 table tbody td {

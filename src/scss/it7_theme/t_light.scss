@@ -1,6 +1,7 @@
 :root {
 	--backgroundColor: var(--neutral10);
 	--color: var(--neutral60);
+	--shadow20: rgba(0,0,0,0.2);
 
 
 
@@ -8,7 +9,11 @@
 
 	--tableTheadBackground: var(--neutral40);
 	--tableTheadColor: white;
+	--tableTheadShadowColor: var(--shadow20);
+
 	--tableBorderColor: var(--neutral20);	
+
+
 	--strippedBg: var(--neutral10);
 	--tableTbodyBackground: white;
 	--buttonBackground: var(--neutral40);
@@ -21,6 +26,8 @@
 }
 
 [class*="accent"] {
+	--tableTheadBackground: var(--accent60);
+    --tableTheadColor:var(--accent10);
 	--checkboxAccent: var(--accent60);
 	--buttonBackground: var(--accent60);
 	--buttonColor: var(--accent10);
@@ -30,18 +37,31 @@
 }
 
 [class*="primary"] {
+	--tableTheadBackground: var(--primary60);
+    --tableTheadColor:var(--primary10);
+    --tableTfootBackground: var(--primary20);
+    --tableTfootColor: var(--primary60);
 	--checkboxAccent: var(--primary60);
 	--buttonBackground: var(--primary60);
-	--buttonColor: var(--primary20);
+	--buttonColor: var(--primary10);
 	--buttonAccent: var(--primary60);
 	--buttonHoverBackground: var(--primary40);
 	--buttonHoverColor: var(--primary80);
 }
 
 [class*="danger"] {
+
+
+	--tableTheadBackground: var(--danger60);
+    --tableTheadColor:var(--danger10);
+
+    --tableTfootBackground: var(--danger10);
+    --tableTfootColor: var(--danger40);
+
+
 	--checkboxAccent: var(--danger60);
 	--buttonBackground: var(--danger60);
-	--buttonColor: var(--danger20);
+	--buttonColor: var(--danger10);
 	--buttonAccent: var(--danger60);
 	--buttonHoverBackground: var(--danger40);
 	--buttonHoverColor: var(--danger80);
@@ -57,10 +77,17 @@
 }
 
 [class*="warning"] {
+	--tableTheadBackground: var(--warning60);
+    --tableTheadColor:var(--warning10);
+
+    --tableTfootBackground: var(--warning20);
+    --tableTfootColor: var(--warning60);
+
+
 	--checkboxAccent: var(--warning60);
 	--buttonAccent: var(--warning60);
 	--buttonBackground: var(--warning60);
-	--buttonColor: var(--warning20);
+	--buttonColor: var(--warning10);
 	--buttonHoverBackground: var(--warning40);
 	--buttonHoverColor: var(--warning80);
 }
