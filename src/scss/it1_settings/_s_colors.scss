@@ -1,0 +1,252 @@
+:root {
+	--primaryH: 187;
+	--successH: 90;
+	--dangerH: 5;
+	--accentH: 296;
+	--warningH: 395;
+
+	--success10:hsl(var(--successH), 80%, 93%);
+	--success20:hsl(var(--successH), 80%, 80%);
+	--success40:hsl(var(--successH), 60%, 60%);
+	--success60:hsl(var(--successH), 80%, 36%);
+	--success80:hsl(var(--successH), 100%, 20%);
+
+	--primary10:hsl(var(--primaryH), 80%, 95%);
+	--primary20:hsl(var(--primaryH), 90%, 85%);
+	--primary40:hsl(var(--primaryH), 80%, 65%);
+	--primary60:hsl(var(--primaryH), 90%, 35%);
+	--primary80:hsl(var(--primaryH), 100%, 21%);
+
+	--danger20:hsl(var(--dangerH), 100%, 85%);
+	--danger40:hsl(var(--dangerH), 85%, 67%);
+	--danger60:hsl(var(--dangerH), 83%, 45%);
+	--danger80:hsl(var(--dangerH), 100%, 28%);
+
+	--accent10:hsl(var(--accentH), 85%, 95%);
+	--accent20:hsl(var(--accentH), 85%, 87%);
+	--accent40:hsl(var(--accentH), 90%, 70%);
+	--accent60:hsl(var(--accentH), 70%, 50%);
+	--accent80:hsl(var(--accentH), 60%, 33%);
+
+	--warning20:hsl(var(--warningH), 90%, 80%);
+	--warning40:hsl(var(--warningH), 90%, 65%);
+	--warning60:hsl(var(--warningH), 90%, 45%);
+	--warning80:hsl(var(--warningH), 100%, 25%);
+
+	--neutral10:hsl(var(--primaryH), 10%, 95%);
+	--neutral20:hsl(var(--primaryH), 10%, 85%);
+	--neutral40:hsl(var(--primaryH), 10%, 60%);
+	--neutral60:hsl(var(--primaryH), 10%, 40%);
+	--neutral80:hsl(var(--primaryH), 10%, 25%);
+
+	--dark20:hsl(var(--primaryH), 10%, 20%);
+	--dark40:hsl(var(--primaryH), 10%, 15%);
+	--dark60:hsl(var(--primaryH), 10%, 10%);
+	--dark80:hsl(var(--primaryH), 10%, 5%);
+}
+
+[class*="neutral"] {
+	--checkboxAccent: var(--neutral60);
+}
+
+.neutral10 {
+	background-color: var(--neutral10);
+	color: var(--neutral60);
+}
+
+.neutral20 {
+	background-color: var(--neutral20);
+	color: var(--neutral80);
+}
+
+.neutral40 {
+	background-color: var(--neutral40);
+	color: var(--neutral80);
+}
+
+.neutral60 {
+	background-color: var(--neutral60);
+	color: var(--neutral20);
+	--checkboxAccent: var(--neutral80);
+}
+
+.neutral80 {
+	background-color: var(--neutral80);
+	color: var(--neutral40);
+}
+
+.dark20 {
+	background-color: var(--dark20);
+	color: var(--neutral40);
+}
+
+.dark40 {
+	background-color: var(--dark40);
+	color: var(--neutral40);
+}
+
+.dark60 {
+	--checkboxOpacity: 0.5;
+	background-color: var(--dark60);
+	color: var(--neutral40);
+}
+
+.dark60 [disabled] {
+	opacity: 0.5;
+}
+
+.dark80 {
+	background-color: var(--dark80);
+	color: var(--neutral40);
+}
+
+[class*="primary"] {
+	--checkboxAccent: var(--primary60);
+	--buttonHoverColor: var(--primary20);
+}
+
+.primary10 {
+	background-color: var(--primary10);
+	color: var(--primary60);
+}
+
+.primary20 {
+	background-color: var(--primary20);
+	color: var(--primary80);
+}
+
+.primary40 {
+	background-color: var(--primary40);
+	color: var(--primary80);
+}
+
+.primary60 {
+	background-color: var(--primary60);
+	color: var(--primary20);
+	--checkboxAccent: var(--primary80);
+	--buttonHoverColor: var(--primary40);
+}
+
+.primary80 {
+	background-color: var(--primary80);
+	color: var(--primary40);
+}
+
+[class*="success"] {
+	--checkboxAccent: var(--success60);
+	--buttonHoverColor: var(--success20);
+}
+
+.success10 {
+	background-color: var(--success10);
+	color: var(--success60);
+}
+
+.success20 {
+	background-color: var(--success20);
+	color: var(--success60);
+}
+
+.success40 {
+	background-color: var(--success40);
+	color: var(--success80);
+}
+
+.success60 {
+	background-color: var(--success60);
+	color: var(--success20);
+	--checkboxAccent: var(--success80);
+	--buttonHoverColor: var(--success40);
+}
+
+.success80 {
+	background-color: var(--success80);
+	color: var(--success40);
+}
+
+[class*="danger"] {
+	--checkboxAccent: var(--danger60);
+	--buttonHoverColor: var(--danger20);
+}
+
+.danger20 {
+	background-color: var(--danger20);
+	color: var(--danger60);
+}
+
+.danger40 {
+	background-color: var(--danger40);
+	color: var(--danger80);
+	
+}
+
+.danger60 {
+	background-color: var(--danger60);
+	color: var(--danger20);
+	--checkboxAccent: var(--danger80);
+	--buttonHoverColor: var(--danger40);
+}
+
+.danger80 {
+	background-color: var(--danger80);
+	color: var(--danger40);
+}
+
+[class*="accent"] {
+	--checkboxAccent: var(--accent60);
+	--buttonHoverColor: var(--accent20);
+}
+
+.accent10 {
+	background-color: var(--accent10);
+	color: var(--accent40);
+}
+
+.accent20 {
+	background-color: var(--accent20);
+	color: var(--accent60);
+}
+
+.accent40 {
+	background-color: var(--accent40);
+	color: var(--accent80);
+}
+
+.accent60 {
+	background-color: var(--accent60);
+	color: var(--accent20);
+	--checkboxAccent: var(--accent80);
+	
+}
+
+.accent80 {
+	background-color: var(--accent80);
+	color: var(--accent40);
+}
+
+[class*="warning"] {
+	--checkboxAccent: var(--warning60);
+	--buttonHoverColor: var(--warning20);
+}
+
+.warning20 {
+	background-color: var(--warning20);
+	color: var(--warning80);
+}
+
+.warning40 {
+	background-color: var(--warning40);
+	color: var(--warning80);
+}
+
+.warning60 {
+	background-color: var(--warning60);
+	color: var(--warning20);
+	--checkboxAccent: var(--warning80);
+	--buttonHoverColor: var(--warning40);
+}
+
+.warning80 {
+	background-color: var(--warning80);
+	color: var(--warning40);
+}

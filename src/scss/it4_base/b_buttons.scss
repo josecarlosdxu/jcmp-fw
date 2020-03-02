@@ -1,0 +1,22 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+.button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-flex;
+	vertical-align: top;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 0;
+	background-image: none;
+}
+

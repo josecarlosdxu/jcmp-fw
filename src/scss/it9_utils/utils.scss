@@ -1,14 +1,58 @@
-// Las utilidades son de alta especificidad, clases muy explícitas.
+// Las utilidades son de alta especificidad,
+// clases muy explícitas.
 // Se utilizan como reemplazos y clases de ayuda.
 // Por lo general son una línea de código y tienen !important.
 
-// Ejemplos:
-
-// Text-align, float, position, display etc.
+// Ejemplos:// Text-align,
+// float,
+// position,
+// display etc.
 
 // https://www.iotacss.com/docs/utilities/
 
-%togglecheck, .togglecheck{
+%togglecheck,
+.togglecheck {
 	display: none;
 }
 
+.horizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column
+}
+
+.center {
+	justify-content: center;
+	align-items: center
+}
+
+.flex {
+	flex: 1
+}
+
+[disabled] {
+	pointer-events: none;
+	opacity: 0.3;
+	user-select: none;
+}
+
+.ml-xs {
+	margin-left: var(--spacing-xs) !important;
+}
+
+.pb-sm {
+	padding-bottom: var(--spacing-sm) !important;
+}
+
+.mt-sm {
+	margin-top: var(--spacing-sm) !important;
+}
+
+.pb-md {
+	padding-bottom: var(--spacing-md) !important;
+}

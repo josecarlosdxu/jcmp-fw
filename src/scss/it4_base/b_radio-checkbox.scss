@@ -1,0 +1,112 @@
+:root {
+	--whiteCheckSVG: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5 21zm5-4l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z' fill='white'/></svg>");
+	--whiteCircleSVG: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><circle cx='5' cy='5' r='3.5' fill='white'/></svg>");
+	--checkboxAccent: var(--primary60);
+	--checkboxOpacity: 0.4;	
+	--inputRadius: 25%;
+	--checkboxH: 1.25rem;
+	--checkboxW: var(--checkboxH);
+}
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-flex;
+	vertical-align: top;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: none;
+	height: var(--checkboxH);
+	width: var(--checkboxW);
+}
+
+input[type="radio"]::after,
+input[type="checkbox"]::after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	color: currentColor;
+	border: 2px solid currentColor;
+	opacity: var(--checkboxOpacity, 0.4);
+	transition: all 0.1s;
+}
+
+input[type="checkbox"][disabled],
+input[type="radio"][disabled] {
+	opacity: calc(var(--checkboxOpacity) - 0.2);
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+	background-color: var(--checkboxAccent);
+	color: var(--checkboxAccent);
+	opacity: 1;
+}
+
+input[type="checkbox"]:not([disabled]):hover,
+input[type="radio"]:not([disabled]):hover,input[type="checkbox"]:focus,input[type="radio"]:focus {
+	opacity: 1;
+	outline: none;
+	color: var(--checkboxAccent);
+}
+
+input[type="radio"]::after,
+input[type="checkbox"]::after {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+input[type="radio"] {
+	border-radius: calc(var(--checkboxH) / 2);
+}
+
+input[type="checkbox"] {
+	border-radius: var(--inputRadius);
+}
+
+input[type="checkbox"]::after {
+	background-image: var(--whiteCheckSVG);
+	background-size: var(--checkboxH);
+	opacity: 0;
+}
+
+input[type="checkbox"]:checked::after {
+	opacity: 1;
+}
+
+input[type="radio"]::after {
+	background-image: var(--whiteCircleSVG);
+}
+
+input[type="radio"]::after {
+	width: 100%;
+	transform: scale(0.8);
+	opacity: 0;
+}
+
+input[type="radio"]:checked::after {
+	opacity: 1;
+}
+
+label[for] {
+	cursor: pointer;
+	vertical-align: top;
+}

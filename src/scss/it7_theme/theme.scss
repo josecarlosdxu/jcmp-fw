@@ -1,6 +1,37 @@
 //----------------------
 // theme  files here
 //----------------------
+* {
+  box-sizing: border-box
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Roboto, Oxygen-Sans, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--dark20);
+}
+
+.elem {
+  display: inline-flex;
+  height: 4rem;
+  width: 6rem;
+  margin-right: var(--spacing-xs);
+  font-size: 0.8rem;
+}
+
+.list {
+  padding: var(--spacing-sm) var(--spacing-sm) 0 var(--spacing-sm);
+}
+
+.icon {
+  fill: currentColor;
+}
 
 
 

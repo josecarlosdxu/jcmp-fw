@@ -4,20 +4,28 @@
   "description": "SCSS ITCSS base fremework",
   "main": "src/index.js",
   "scripts": {
-    "clean": "rm dist/bundle.js",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "sass": "node-sass --include-path scss src/scss/main.scss dist/css/main.css"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "server": "webpack-dev-server"
   },
   "author": "Jose Carlos Madrid",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
+    "autoprefixer": "^9.7.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.1"
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }
