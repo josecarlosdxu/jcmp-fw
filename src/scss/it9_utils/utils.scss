@@ -34,9 +34,12 @@
 	text-align: center !important;
 }
 
-.flex {
+.flex, .flex-wrap {
 	flex: 1;
 	display: flex;
+}
+.flex-wrap {
+	flex-wrap:wrap;
 }
 
 [disabled] {
@@ -60,6 +63,9 @@
 
 .ml-xs {
 	margin-left: var(--spacing-xs) !important;
+}
+.mb-xs {
+	margin-bottom: var(--spacing-xs) !important;
 }
 .pl-xs {
 	padding-left: var(--spacing-xs) !important;

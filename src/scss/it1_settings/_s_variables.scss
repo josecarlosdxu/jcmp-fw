@@ -1,10 +1,23 @@
 :root {
 	--whiteCheckSVG: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5 21zm5-4l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z' fill='white'/></svg>");
 	--whiteCircleSVG: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><circle cx='5' cy='5' r='3.5' fill='white'/></svg>");
+
+
   --spacing-xs: 8px;
   --spacing-sm: 12px;
   --spacing-md: 24px;
   --spacing-lg: 36px;
+
+
+
+  --buttonMinWidth: calc(var(--spacing-lg) * 3);
+  --buttonBorderRadius: calc(var(--spacing-xs) / 2);
+
+
+
+
+
+   --tableBorderRadius: var(--spacing-xs);
 
 }
 
