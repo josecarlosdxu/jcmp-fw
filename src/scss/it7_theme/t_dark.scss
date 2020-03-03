@@ -46,6 +46,14 @@
 
 	[class*="danger"] {
 		//--checkboxAccent: var(--danger60);
+
+		--tableTheadBackground: var(--danger80);
+        --tableTheadColor:var(--danger20);
+
+        --tableTfootBackground: var(--danger80);
+        --tableTfootColor: var(--danger40);
+
+
 		--buttonBackground: var(--danger80);
 		--buttonColor: var(--danger20);
 		--buttonAccent: var(--danger60);
