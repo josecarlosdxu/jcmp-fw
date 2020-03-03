@@ -1,7 +1,3 @@
-:root {
-	
-	--buttonHoverColor: white;
-}
 
 input[type="submit"],
 input[type="button"]
@@ -20,7 +16,8 @@ button,
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-origin: border-box;
-	box-shadow: 0 0 1px  var(--buttonBorderColor);
+	
+	box-shadow: 1px 1px 4px var(--componentBoxShadowColor), 0 0 0 1px  var(--componentBoxShadowColor) inset;
 }
 
 .button:hover {

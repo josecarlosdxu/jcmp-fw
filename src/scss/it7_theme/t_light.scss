@@ -3,7 +3,7 @@
 	--color: var(--neutral60);
 
 
-	--tableTheadBackground: var(--neutral40);
+	--tableTheadBackground: var(--neutral60);
 	--tableTheadColor: white;
 
 	--tableTbodyBackground: white;
@@ -13,7 +13,9 @@
 	--tableTfootColor: var(--neutral60);
 
 
-	--tableBoxShadowColor: var(--shadow10);
+	--componentBoxShadowColor: var(--shadow05);
+
+
 	--tableTbodyTrBoxShadow: 0 18px 2px -18px rgba(0,0,0,0.05), 0 1px rgba(0,0,0,0.03);
 
 	--strippedBg: var(--neutral10);

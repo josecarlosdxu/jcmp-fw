@@ -38,7 +38,7 @@
 	--neutral10:hsl(var(--primaryH), 7%, 95%);
 	--neutral20:hsl(var(--primaryH), 7%, 85%);
 	--neutral40:hsl(var(--primaryH), 7%, 65%);
-	--neutral60:hsl(var(--primaryH), 7%, 37%);
+	--neutral60:hsl(var(--primaryH), 7%, 39%);
 	--neutral80:hsl(var(--primaryH), 7%, 25%);
 	// --------------------
 	--dark20:hsl(var(--primaryH), 7%, 20%);
@@ -48,14 +48,20 @@
 
 
 
+    --shadow05:rgba(0, 0, 0, 0.05);
+	--shadow10:rgba(0, 0, 0, 0.10);
+	--shadow20:rgba(0, 0, 0, 0.20);
+	--shadow30:rgba(0, 0, 0, 0.30);
+	--shadow50:rgba(0, 0, 0, 0.50);
 
-	--shadow10:rgba(0, 0, 0, 0.1);
-	--shadow20:rgba(0, 0, 0, 0.2);
-	--shadow50:rgba(0, 0, 0, 0.5);
 
-
-
-	--light50:rgba(255, 255, 255, 0.5);
+    --light05:rgba(255, 255, 255, 0.05);
+	--light10:rgba(255, 255, 255, 0.10);
+	--light20:rgba(255, 255, 255, 0.20);
+	--light30:rgba(255, 255, 255, 0.30);
+	--light40:rgba(255, 255, 255, 0.40);
+	--light45:rgba(255, 255, 255, 0.45);
+	--light50:rgba(255, 255, 255, 0.50);
 
 
 
