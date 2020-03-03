@@ -1,2 +1,2 @@
 # jcmp-fw
-Simple node sass framework 
+Simple scss framework 
