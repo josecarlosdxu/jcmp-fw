@@ -39,14 +39,13 @@ table td {
 
 }
 
-
-
-
 .dark .table tfoot {
   filter: grayscale(0.5) brightness(0.8);
+
   &:before {
     display: none;
   }
+
 }
 
 .table.sticky thead tr:nth-child(1) th {
@@ -54,8 +53,6 @@ table td {
   top: 0;
   z-index: 100;
 }
-
-
 
 .table tr:nth-child(1) th {
   text-align: inherit;
@@ -87,8 +84,6 @@ table tfoot tr th:last-child {
   border-bottom-right-radius: var(--tableBorderRadius);
 }
 
-
-
 table tbody td {
   padding: 1rem;
 }
@@ -105,7 +100,8 @@ body:not(.dark) .table.striped tbody tr:nth-child(2n) {
   mix-blend-mode: multiply;
 }
 
-.table-item--num, .table.sticky tr th.table-item--num {
+.table-item--num,
+.table.sticky tr th.table-item--num {
   text-align: right;
 }
 

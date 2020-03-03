@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%= titulo %></title>
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= titulo %></title>
+  </head>
   <body class="dark">
     <h1><%= encabezamiento%></h1>
     <svg class="hidden">
       <defs>
       <g id="clear">
-        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
-      </g>
-      </defs>
-    </svg>
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+    </g>
+    </defs>
+  </svg>
+  <!--  <body >  -->
+  <main>
 
-    <!--  <body >  -->
-    <main>
-      <article class="" >
-        <section class="list">
-          <div class="elem center primary80">primary80</div>
-          <div class="elem center primary60">primary60</div>
-          <div class="elem center primary40">primary40</div>
-          <div class="elem center primary20">primary20</div>
-          <div class="elem center primary10">primary10</div>
-        </section>
-        <section class="list">
-          <div class="elem center success80">success80</div>
-          <div class="elem center success60">success60</div>
-          <div class="elem center success40">success40</div>
-          <div class="elem center success20">success20</div>
-          <div class="elem center success10">success10</div>
-        </section>
-        <section class="list">
-          <div class="elem center danger80">danger80</div>
-          <div class="elem center danger60">danger60</div>
-          <div class="elem center danger40">danger40</div>
-          <div class="elem center danger20">danger20</div>
-          <div class="elem center danger10">danger10</div>
-        </section>
-        <section class="list">
-          <div class="elem center accent80">accent80</div>
-          <div class="elem center accent60">accent60</div>
-          <div class="elem center accent40">accent40</div>
-          <div class="elem center accent20">accent20</div>
-          <div class="elem center accent10">accent10</div>
-        </section>
-        <section class="list">
-          <div class="elem center warning80">warning80</div>
-          <div class="elem center warning60">warning60</div>
-          <div class="elem center warning40">warning40</div>
-          <div class="elem center warning20">warning20</div>
-          <div class="elem center warning10">warning10</div>
-        </section>
-        <section class="list">
-          <div class="elem center neutral80">neutral80</div>
-          <div class="elem center neutral60">neutral60</div>
-          <div class="elem center neutral40">neutral40</div>
-          <div class="elem center neutral20">neutral20</div>
-          <div class="elem center neutral10">neutral10</div>
-        </section>
-        <section class="list">
-          <div class="elem center dark80">dark80</div>
-          <div class="elem center dark60">dark60</div>
-          <div class="elem center dark40">dark40</div>
-          <div class="elem center dark20">dark20</div>
-        </section>
-      </article>
-      <article>
-        <section class="list mt-sm pb-sm">
-          <input type="checkbox" class="success" id="checkbox"><label for="checkbox" class="pl-xs">label</label>
-          <input type="checkbox" class="ml-xs" id="checkbox2"><label for="checkbox2" class="pl-xs">label</label>
-          <input type="checkbox" id="checkbox1" class="ml-xs" disabled=""><label for="checkbox1" disabled="" class="pl-xs">label</label>
-        </section>
-        <section class="list mt-sm pb-sm">
-          <input type="radio" name="radiobtn"> <input type="radio" class="ml-xs" name="radiobtn">
-        </section>
-        <form class="list mt-sm pb-sm " autocomplete="off">
-          <input type="checkbox" class="switch" id="switch"><label for="switch" class="pl-xs">label</label>
-          <input type="checkbox" disabled class="switch ml-xs" id="switch2"><label for="switch2" disabled class="pl-xs">label</label>
-        </form>
-      </article>
-      <article>
-        <section class="list mt-sm pb-sm">
-          <button type="button" class="button danger60">Button</button>
-          <button type="button" class="button primary60">Button</button>
-          <button type="button" class="button accent60">Button</button>
-          <button type="button" class="button success60">Button</button>
-          <button type="button" class="button warning60">Button</button>
-          <button type="button" class="button">Button</button>
-        </section>
-      </article>
-      <article>
-        <article class="flex-wrap">
+    <!-- <div class="elem center" style="color: white; background-color: hsl(187, 90%, 35%)">primary60</div>
+    <div class="elem center" style="color: white; background-color: hsl(150, 80%, 36%)">successy60</div>
+    <div class="elem center" style="color: white; background-color: hsl(5,83%, 45%)">danger60</div>
+    <div class="elem center" style="color: white; background-color: hsl(330,50%, 55%)">accent60</div>
+    <div class="elem center" style="color: white; background-color: hsl(40,90%, 45%)">warning60</div> -->
+    
+
+
+    <article class="hidden" >
+      <section class="list">
+        <div class="elem center primary80">primary80</div>
+        <div class="elem center primary60">primary60</div>
+        <div class="elem center primary40">primary40</div>
+        <div class="elem center primary20">primary20</div>
+        <div class="elem center primary10">primary10</div>
+      </section>
+      <section class="list">
+        <div class="elem center success80">success80</div>
+        <div class="elem center success60">success60</div>
+        <div class="elem center success40">success40</div>
+        <div class="elem center success20">success20</div>
+        <div class="elem center success10">success10</div>
+      </section>
+      <section class="list">
+        <div class="elem center danger80">danger80</div>
+        <div class="elem center danger60">danger60</div>
+        <div class="elem center danger40">danger40</div>
+        <div class="elem center danger20">danger20</div>
+        <div class="elem center danger10">danger10</div>
+      </section>
+      <section class="list">
+        <div class="elem center accent80">accent80</div>
+        <div class="elem center accent60">accent60</div>
+        <div class="elem center accent40">accent40</div>
+        <div class="elem center accent20">accent20</div>
+        <div class="elem center accent10">accent10</div>
+      </section>
+      <section class="list">
+        <div class="elem center warning80">warning80</div>
+        <div class="elem center warning60">warning60</div>
+        <div class="elem center warning40">warning40</div>
+        <div class="elem center warning20">warning20</div>
+        <div class="elem center warning10">warning10</div>
+      </section>
+      <section class="list">
+        <div class="elem center neutral80">neutral80</div>
+        <div class="elem center neutral60">neutral60</div>
+        <div class="elem center neutral40">neutral40</div>
+        <div class="elem center neutral20">neutral20</div>
+        <div class="elem center neutral10">neutral10</div>
+      </section>
+      <section class="list">
+        <div class="elem center dark80">dark80</div>
+        <div class="elem center dark60">dark60</div>
+        <div class="elem center dark40">dark40</div>
+        <div class="elem center dark20">dark20</div>
+      </section>
+    </article>
+    <article class="hidden">
+      <section class="list mt-sm pb-sm">
+        <input type="checkbox" class="success" id="checkbox"><label for="checkbox" class="pl-xs">label</label>
+        <input type="checkbox" class="ml-xs" id="checkbox2"><label for="checkbox2" class="pl-xs">label</label>
+        <input type="checkbox" id="checkbox1" class="ml-xs" disabled=""><label for="checkbox1" disabled="" class="pl-xs">label</label>
+      </section>
+      <section class="list mt-sm pb-sm">
+        <input type="radio" name="radiobtn"> <input type="radio" class="ml-xs" name="radiobtn">
+      </section>
+      <form class="list mt-sm pb-sm " autocomplete="off">
+        <input type="checkbox" class="switch" id="switch"><label for="switch" class="pl-xs">label</label>
+        <input type="checkbox" disabled class="switch ml-xs" id="switch2"><label for="switch2" disabled class="pl-xs">label</label>
+      </form>
+    </article>
+    <article class="nohidden">
+      <section class="list mt-sm pb-sm">
+        <button type="button" class="button danger60">Button</button>
+        <button type="button" class="button primary60">Button</button>
+        <button type="button" class="button accent60">Button</button>
+        <button type="button" class="button success60">Button</button>
+        <button type="button" class="button warning60">Button</button>
+        <button type="button" class="button">Button</button>
+      </section>
+    </article>
+    <article class="flex-wrap nohidden">
         <table class="table sticky primary ml-xs striped mb-xs">
           <tfoot>
-            <tr>
-              <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
-            </tr>
+          <tr>
+            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+          </tr>
           </tfoot>
           <thead>
             <tr>
@@ -137,12 +143,12 @@
             </tr>
           </tbody>
         </table>
-       
-         <table class="table sticky ml-xs warning striped mb-xs">
+        
+        <table class="table sticky ml-xs warning striped mb-xs">
           <tfoot>
-            <tr>
-              <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
-            </tr>
+          <tr>
+            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+          </tr>
           </tfoot>
           <thead>
             <tr>
@@ -181,10 +187,10 @@
           </tbody>
         </table>
         <table class="table sticky  ml-xs mb-xs">
-           <tfoot>
-            <tr>
-              <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
-            </tr>
+          <tfoot>
+          <tr>
+            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+          </tr>
           </tfoot>
           <thead>
             <tr>
@@ -231,7 +237,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -244,7 +250,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -257,7 +263,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -270,7 +276,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -283,7 +289,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -296,7 +302,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -309,7 +315,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -322,7 +328,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -335,7 +341,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -348,7 +354,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -361,7 +367,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -374,7 +380,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -387,7 +393,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -400,7 +406,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -413,7 +419,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -426,7 +432,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -439,7 +445,7 @@
                 </button>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td class="table-item table-item--num">4</td>
               <td class="table-item table-item--num">5000</td>
               <td class="table-item">ABC-123456789</td>
@@ -454,7 +460,7 @@
             </tr>
           </tbody>
         </table>
-      </article>
+    </article>
     </main>
     <script src="./js/index.js"></script>
   </body>

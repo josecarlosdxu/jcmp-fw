@@ -1,9 +1,9 @@
 :root {
 	--primaryH: 187;
-	--successH: 90;
+	--successH: 150;
 	--dangerH: 5;
-	--accentH: 296;
-	--warningH: 395;
+	--accentH: 340;
+	--warningH: 34;
 	// --------------------
 	--success10:hsl(var(--successH), 80%, 93%);
 	--success20:hsl(var(--successH), 80%, 80%);
@@ -23,11 +23,11 @@
 	--danger60:hsl(var(--dangerH), 83%, 45%);
 	--danger80:hsl(var(--dangerH), 100%, 28%);
 	// --------------------
-	--accent10:hsl(var(--accentH), 85%, 95%);
-	--accent20:hsl(var(--accentH), 85%, 87%);
-	--accent40:hsl(var(--accentH), 90%, 70%);
-	--accent60:hsl(var(--accentH), 70%, 50%);
-	--accent80:hsl(var(--accentH), 60%, 33%);
+	--accent10:hsl(var(--accentH), 50%, 95%);
+	--accent20:hsl(var(--accentH), 50%, 87%);
+	--accent40:hsl(var(--accentH), 50%, 70%);
+	--accent60:hsl(var(--accentH), 50%, 50%);
+	--accent80:hsl(var(--accentH), 50%, 33%);
 	// --------------------
 	--warning10:hsl(var(--warningH), 90%, 90%);
 	--warning20:hsl(var(--warningH), 90%, 80%);
