@@ -39,8 +39,14 @@ table td {
 
 }
 
+
+
+
 .dark .table tfoot {
   filter: grayscale(0.5) brightness(0.8);
+  &:before {
+    display: none;
+  }
 }
 
 .table.sticky tr:nth-child(1) th {

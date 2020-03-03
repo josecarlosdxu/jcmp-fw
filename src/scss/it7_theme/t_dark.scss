@@ -1,11 +1,30 @@
 .dark {
 	--backgroundColor: var(--dark80);
 	--color: var(--neutral40);
+
+
 	--tableTheadBackground: var(--neutral60);
 	--tableTheadColor: var(--neutral20);
-	--tableBorderColor: transparent;
+
+
 	--tableTbodyBackground: var(--dark40);
+
+	--tableTbodyColor: var(--neutral60);
+	--tableTbodyColor: var(--light50);
+
+	--tableTfootBackground: var(--neutral60);
+	--tableTfootColor: var(--neutral40);
+
+	--tableBoxShadowColor: var(--shadow50);
+
+
+	--tableTbodyTrBoxShadow: 0 18px 2px -18px var(--dark20), 0 1px var(--dark20);	
+
+	
+
 	--strippedBg: var(--dark20);
+
+
 	--buttonBackground: var(--neutral80);
 	--buttonAccent: var(--neutral60);
 	--buttonColor: var(--neutral20);
@@ -13,8 +32,7 @@
 	--buttonHoverColor: var(--neutral10);
 
 
-	--tableTfootBackground: var(--neutral60);
-	--tableTfootColor: var(--neutral40);
+	
 
 
 
