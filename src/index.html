@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= titulo %></title>
   </head>
-  <body class="nodark" >
+  <body class="no-dark" >
     <h1 class="p-sm"><%= encabezamiento%></h1>
     <svg class="hidden">
       <defs>
@@ -90,7 +90,7 @@
         <button type="button" class="button">Button</button>
       </section>
     </article>
-    <article class="flex-wrap nohidden">
+    <article class="flex-wrap no-hidden">
       <table class="table sticky primary ml-xs  striped mb-xs ">
         <tfoot>
         <tr>
@@ -98,7 +98,7 @@
         </tr>
         </tfoot>
         <thead>
-           <tr>
+          <tr>
             <th class="table-item table-item--num">Id</th>
             <th class="table-item table-item--num">Cantidad</th>
             <th class="table-item">Referencia</th>
@@ -453,12 +453,26 @@
     <form autocomplete="off" class="hidden p-sm">
       <input type="text" placeholder="input type=&quot;text&quot;" minlength="4" maxlength="8" required pattern="\S+.*" >
       <input type="number" placeholder="input type=&quot;number&quot;">
-     
+      
       <input type="email" placeholder="input type=&quot;email&quot;" required >
       <input type="tel" placeholder="input type=&quot;tel&quot;" pattern="[0-9]+">
       <textarea type="text" placeholder="textarea"></textarea>
       
     </form>
+    <article class="p-sm">
+      <ul class="steps steps-horizontal">
+        <li class="step selected"></li>
+        <li class="step selected"></li>
+        <li class="step selected"></li>
+        <li class="step selected"></li>
+        <li class="step"></li>
+
+        <li class="step"></li>
+        <li class="step"></li>
+        <li class="step"></li>
+        <li class="step"></li>
+      </ul>
+    </section>
   </main>
   <script src="./js/index.js"></script>
 </body>

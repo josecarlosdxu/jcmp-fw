@@ -1,0 +1,83 @@
+.steps {
+	counter-reset: steps;
+
+	.step {
+		font-size: var(--stepsFontSize);
+	}
+
+	.step::before {
+		counter-increment: steps;
+		content: counter(steps);
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		position: relative;
+		padding: 0.5em;
+		background-color: var(--tableTfootBackground);
+		color: var(--tableTfootColor);
+		border-radius: 50%;
+		min-width: 1em;
+		line-height: 1;
+		box-sizing: content-box;
+		border: var(--spacing-01) solid var(--backgroundColor);
+	}
+
+}
+
+.steps-horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: min-content;
+	&:before,
+	.step:not(:first-child):after {
+		content: "";
+		font-size: inherit;
+		display: block;
+		height: var(--stepsRuleHeight);
+		background-color: var(--tableTfootBackground);
+		width: calc(100% - 1.8em);
+		position: absolute;
+		left: 0.5em;
+		z-index: -1;
+	}
+
+	.step {
+		display: inline-flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		&:not(:first-child) {
+			flex-grow: 1;
+
+			&:after {
+				transform: scaleX(0);
+				background-color: green;
+				transform-origin: 0;
+				transition: none;
+				left: -0.25em;
+				z-index: 0;
+			}
+
+		}
+
+	}
+
+	.step.selected:before,
+	.step.selected:after {
+		background-color: var(--inputValidColor);
+		transition: background-color 0.2s 0.4s, color 0s 0.4s;
+		color: white;
+	}
+
+	.step.selected:after {
+		transform: scaleX(1);
+		transition: transform 0.2s 0.2s;
+	}
+
+	.step.selected + .step:not(.selected):before {
+		background-color: var(--primary60);
+		color: white;
+	}
+
+}

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  position: relative;
 }
 
 html {
@@ -29,4 +30,16 @@ body {
 
 .icon {
   fill: currentColor;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--webkitScrollbarTrack);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--webkitScrollbarThumb);
 }
