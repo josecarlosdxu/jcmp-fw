@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= titulo %></title>
   </head>
-  <body class="dark">
-    <h1><%= encabezamiento%></h1>
+  <body class="nodark" >
+    <h1 class="p-sm"><%= encabezamiento%></h1>
     <svg class="hidden">
       <defs>
       <g id="clear">
@@ -15,17 +15,7 @@
     </g>
     </defs>
   </svg>
-  <!--  <body >  -->
   <main>
-
-    <!-- <div class="elem center" style="color: white; background-color: hsl(187, 90%, 35%)">primary60</div>
-    <div class="elem center" style="color: white; background-color: hsl(150, 80%, 36%)">successy60</div>
-    <div class="elem center" style="color: white; background-color: hsl(5,83%, 45%)">danger60</div>
-    <div class="elem center" style="color: white; background-color: hsl(330,50%, 55%)">accent60</div>
-    <div class="elem center" style="color: white; background-color: hsl(40,90%, 45%)">warning60</div> -->
-    
-
-
     <article class="hidden" >
       <section class="list">
         <div class="elem center primary80">primary80</div>
@@ -90,7 +80,7 @@
         <input type="checkbox" disabled class="switch ml-xs" id="switch2"><label for="switch2" disabled class="pl-xs">label</label>
       </form>
     </article>
-    <article class="nohidden">
+    <article class="hidden">
       <section class="list mt-sm pb-sm">
         <button type="button" class="button danger60">Button</button>
         <button type="button" class="button primary60">Button</button>
@@ -101,367 +91,375 @@
       </section>
     </article>
     <article class="flex-wrap nohidden">
-        <table class="table sticky primary ml-xs striped mb-xs">
-          <tfoot>
-          <tr>
-            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+      <table class="table sticky primary ml-xs  striped mb-xs ">
+        <tfoot>
+        <tr>
+          <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+        </tr>
+        </tfoot>
+        <thead>
+           <tr>
+            <th class="table-item table-item--num">Id</th>
+            <th class="table-item table-item--num">Cantidad</th>
+            <th class="table-item">Referencia</th>
+            <th class="table-item">Estado</th>
+            <th class="table-item">Acciones</th>
           </tr>
-          </tfoot>
-          <thead>
-            <tr>
-              <th class="table-item table-item--num">Id</th>
-              <th class="table-item table-item--num">Cantidad</th>
-              <th class="table-item">Referencia</th>
-              <th class="table-item">Estado</th>
-              <th class="table-item">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-item table-item--num">1 </td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <input class="switch" type="checkbox">
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">2</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-            </tr>
-          </tbody>
-        </table>
-        
-        <table class="table sticky ml-xs warning striped mb-xs">
-          <tfoot>
+        </thead>
+        <tbody>
           <tr>
-            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+            <td class="table-item table-item--num">1 </td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <input class="switch" type="checkbox">
+            </td>
           </tr>
-          </tfoot>
-          <thead>
-            <tr>
-              <th class="table-item table-item--num">Id</th>
-              <th class="table-item table-item--num">Cantidad</th>
-              <th class="table-item">Referencia</th>
-              <th class="table-item">Estado</th>
-              <th class="table-item">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-item table-item--num">1 </td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <input class="switch" type="checkbox">
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">2</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-            </tr>
-          </tbody>
-        </table>
-        <table class="table sticky  ml-xs mb-xs">
-          <tfoot>
           <tr>
-            <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+            <td class="table-item table-item--num">2</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
           </tr>
-          </tfoot>
-          <thead>
-            <tr>
-              <th class="table-item table-item--num">Id</th>
-              <th class="table-item table-item--num">Cantidad</th>
-              <th class="table-item">Referencia</th>
-              <th class="table-item">Estado</th>
-              <th class="table-item">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-item table-item--num">1 </td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <input class="switch" type="checkbox">
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">2</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-item table-item--num">4</td>
-              <td class="table-item table-item--num">5000</td>
-              <td class="table-item">ABC-123456789</td>
-              <td class="table-item">En espera</td>
-              <td class="table-item table-item--actions">
-                <button class="button-icon">
-                <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
-                  <use href="#clear"></use>
-                </svg>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table sticky ml-xs warning  striped mb-xs">
+        <tfoot>
+        <tr>
+          <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+        </tr>
+        </tfoot>
+        <thead>
+          <tr>
+            <th class="table-item table-item--num">Id</th>
+            <th class="table-item table-item--num">Cantidad</th>
+            <th class="table-item">Referencia</th>
+            <th class="table-item">Estado</th>
+            <th class="table-item">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-item table-item--num">1 </td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <input class="switch" type="checkbox">
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">2</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table sticky ml-xs mb-xs">
+        <tfoot>
+        <tr>
+          <th class="table-item text-center" colspan="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</th>
+        </tr>
+        </tfoot>
+        <thead>
+          <tr>
+            <th class="table-item table-item--num">Id</th>
+            <th class="table-item table-item--num">Cantidad</th>
+            <th class="table-item">Referencia</th>
+            <th class="table-item">Estado</th>
+            <th class="table-item">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-item table-item--num">1 </td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <input class="switch" type="checkbox">
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">2</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-item table-item--num">4</td>
+            <td class="table-item table-item--num">5000</td>
+            <td class="table-item">ABC-123456789</td>
+            <td class="table-item">En espera</td>
+            <td class="table-item table-item--actions">
+              <button class="button-icon">
+              <svg viewBox="0 0 24 24" height="24" width="24" class="icon">
+                <use href="#clear"></use>
+              </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </article>
-    </main>
-    <script src="./js/index.js"></script>
-  </body>
+    <form autocomplete="off" class="hidden p-sm">
+      <input type="text" placeholder="input type=&quot;text&quot;" minlength="4" maxlength="8" required pattern="\S+.*" >
+      <input type="number" placeholder="input type=&quot;number&quot;">
+     
+      <input type="email" placeholder="input type=&quot;email&quot;" required >
+      <input type="tel" placeholder="input type=&quot;tel&quot;" pattern="[0-9]+">
+      <textarea type="text" placeholder="textarea"></textarea>
+      
+    </form>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
 </html>

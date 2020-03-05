@@ -1,0 +1,88 @@
+:root {
+
+	--inputBackgroundColor: white;
+	--inputBorderColor: var(--shadow30);
+	--inputErrorColor: var(--danger60);
+	--inputValidColor: var(--success60);
+
+}
+
+input:not([type="radio"]):not([type="checkbox"])[type=number] { 
+  -moz-appearance: textfield;
+}
+
+input[type=number]:hover::-webkit-inner-spin-button {  
+    
+    height: 40px;
+    position:absolute;
+    right:1px;
+    top:0;
+    opacity: 0.5;
+    /*&:after {
+    	content:"";
+    	opacity:1;
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left:0;
+    	height:20px;
+    	width:20px;
+    }*/
+    
+}
+
+input[type=number]{  
+	
+    
+   
+    
+}
+
+input:not([type="radio"]):not([type="checkbox"]),textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: var(--inputBackgroundColor);
+	color:inherit;
+	padding: var(--spacing-02) var(--spacing-03) var(--spacing-03);
+	border-radius: var(--spacing-01);
+	border: 1px solid var(--inputBorderColor);
+	min-height: 2.75rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+	line-height: 1.3;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: calc(100% - var(--spacing-01)) center;
+	background-size: var(--spacing-04);
+}
+
+input[placeholder]:not(:placeholder-shown):invalid {
+	border-color: red;
+}
+
+:not(output):-moz-ui-invalid {
+
+	background-color: var(--inputErrorBackgroundColor) !important;
+	color:var(--inputErrorColor) !important;
+	border-color: var(--inputErrorColor) !important;
+	box-shadow:  0 0 1px 1px var(--inputErrorColor) inset;
+	background-image: var(--redCross);
+}
+
+
+
+/*input:invalid:not([type="radio"]):not([type="checkbox"]) {
+	background-color: red;
+}
+input:indeterminate {
+  background: lime;
+}*/
+input:required:valid:not([type="radio"]):not([type="checkbox"]) {
+	background-image: var(--greenCheckSVG);
+	background-color: var(--inputSuccessBackgroundColor);
+	border-color: var(--inputValidColor);
+	box-shadow:  0 0 1px 1px var(--inputValidColor) inset;
+	color: var(--inputValidColor);
+}

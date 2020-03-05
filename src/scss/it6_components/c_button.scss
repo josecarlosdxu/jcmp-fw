@@ -7,7 +7,7 @@ button,
 	background-color: var(--buttonBackground);
 	color: var(--buttonColor);
 	min-width: var(--buttonMinWidth);
-	padding: var(--spacing-xs) var(--spacing-sm) var(--spacing-sm);
+	padding: var(--spacing-02) var(--spacing-03) var(--spacing-03);
 	border-radius: var(--buttonBorderRadius);
 	transition: all 0.1s;
 	background-image: linear-gradient(var(--buttonAccent), transparent);

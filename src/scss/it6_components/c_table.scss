@@ -48,10 +48,42 @@ table td {
 
 }
 
+/*.table.sticky thead tr{
+   position: sticky;
+  top: 0;
+  
+  z-index: 100;
+   background-color: var(--backgroundColor);
+    background-color: red;
+  box-shadow: -1px -3px 0 var(--backgroundColor),  1px -3px 0 var(--backgroundColor);
+}*/
 .table.sticky thead tr:nth-child(1) th {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+table thead tr th {
+  &:first-child,
+  &:last-child {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      z-index: -1;
+    }
+
+    &:before {
+      background-color: var(--backgroundColor);
+    }
+
+  }
+
 }
 
 .table tr:nth-child(1) th {
@@ -70,10 +102,36 @@ table thead tr th {
 
 table thead tr th:first-child {
   border-top-left-radius: var(--tableBorderRadius);
+
+  &:before {
+    box-shadow: -3px 0 var(--backgroundColor);
+  }
+
+  &:after {
+    border-top-left-radius: var(--tableBorderRadius);
+    background-color: var(--tableTheadBackground);
+  }
+
 }
 
 table thead tr th:last-child {
   border-top-right-radius: var(--tableBorderRadius);
+
+  &:before,
+  &:after {
+    left: auto;
+    right: 0;
+  }
+
+  &:before {
+    box-shadow: 3px 0 var(--backgroundColor);
+  }
+
+  &:after {
+    border-top-right-radius: var(--tableBorderRadius);
+    background-color: var(--tableTheadBackground);
+  }
+
 }
 
 table tfoot tr th:first-child {

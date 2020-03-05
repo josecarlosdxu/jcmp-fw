@@ -1,5 +1,6 @@
 :root {
 	--backgroundColor: var(--neutral10);
+	
 	--color: var(--neutral60);
 
 
@@ -28,6 +29,19 @@
 	--buttonAccent: var(--neutral40);
 	--buttonHoverBackground: var(--neutral20);
 	--buttonHoverColor: var(--neutral60);
+
+
+
+	--inputBackgroundColor: white;
+	
+	--inputErrorBackgroundColor: var(--danger10);
+
+	--inputSuccessBackgroundColor: var(--success10);
+
+
+	--inputBorderColor: var(--shadow30);
+	--inputErrorColor: var(--danger60);
+	--inputValidColor: var(--success60);
 
 	
 
