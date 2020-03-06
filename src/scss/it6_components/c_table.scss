@@ -8,6 +8,7 @@ body {
   --tableTfootColor: var(--neutral60);
   --tableBoxShadow: 1px 1px 8px var(--componentBoxShadowColor), 0 0 0 1px var(--componentBoxShadowColor);
   --tableTbodyTrBoxShadow: 0 18px 2px -18px var(--shadow05), 0 1px var(--shadow03);
+  --compensateShadowColor: #C5CACA;
 }
 
 [class*="accent"] {
@@ -46,6 +47,7 @@ body {
 }
 
 .dark {
+  --compensateShadowColor: #111414;
   --strippedBg: var(--shadow20);
   --tableTheadBackground: var(--neutral80);
   --tableTheadColor: var(--neutral40);
@@ -53,42 +55,42 @@ body {
   --tableTbodyBackground: var(--dark40);
   --tableTbodyColor: var(--light40);
   --tableTfootBackground: var(--dark20);
-  --tableTfootColor: var(--light30);
+  --tableTfootColor: var(--light40);
   --tableTbodyTrBoxShadow: 0 18px 2px -18px var(--light05), 0 1px var(--light05);
 
   [class*="accent"] {
     --tableTheadBackground: hsl(var(--accentH), 50%, 20%);
     --tableTheadColor: hsl(var(--accentH), 20%, 60%);
-    --tableTfootBackground: hsl(var(--accentH), 20%, 20%);
-    --tableTfootColor: hsl(var(--accentH), 20%, 50%);
+    --tableTfootBackground: hsl(var(--accentH), 20%, 19%);
+    --tableTfootColor: hsl(var(--accentH), 10%, 50%);
   }
 
   [class*="primary"] {
     --tableTheadBackground: hsl(var(--primaryH), 100%, 17%);
     --tableTheadColor: hsl(var(--primaryH), 30%, 60%);
     --tableTfootBackground: hsl(var(--primaryH), 50%, 15%);
-    --tableTfootColor: hsl(var(--primaryH), 20%, 50%);
+    --tableTfootColor: hsl(var(--primaryH), 15%, 47%);
   }
 
   [class*="warning"] {
     --tableTheadBackground: hsl(var(--warningH), 50%, 20%);
     --tableTheadColor: hsl(var(--warningH), 20%, 60%);
-    --tableTfootBackground: hsl(var(--warningH), 20%, 20%);
-    --tableTfootColor: hsl(var(--warningH), 20%, 50%);
+    --tableTfootBackground: hsl(var(--warningH), 20%, 19%);
+    --tableTfootColor: hsl(var(--warningH), 15%, 47%);
   }
 
   [class*="danger"] {
     --tableTheadBackground: hsl(var(--dangerH), 60%, 20%);
     --tableTheadColor: hsl(var(--dangerH), 30%, 60%);
     --tableTfootBackground: hsl(var(--dangerH), 30%, 20%);
-    --tableTfootColor: hsl(var(--dangerH), 20%, 50%);
+    --tableTfootColor: hsl(var(--dangerH), 20%, 52%);
   }
 
   [class*="success"] {
     --tableTheadBackground: hsl(var(--successH), 100%, 17%);
     --tableTheadColor: hsl(var(--successH), 30%, 60%);
-    --tableTfootBackground: hsl(var(--successH), 50%, 15%);
-    --tableTfootColor: hsl(var(--successH), 20%, 50%);
+    --tableTfootBackground: hsl(var(--successH), 20%, 18%);
+    --tableTfootColor: hsl(var(--successH), 10%, 50%);
   }
 
 }
@@ -115,7 +117,7 @@ table td {
     background-color: var(--tableTfootBackground);
   }
 
-  &:before {
+  /*&:before {
     content: "";
     position: absolute;
     top: 0;
@@ -129,12 +131,7 @@ table td {
     opacity: 0.1;
     border-bottom-left-radius: var(--tableBorderRadius);
     border-bottom-right-radius: var(--tableBorderRadius);
-  }
-
-}
-
-.dark .table tfoot::before {
-  display: none;
+  }*/
 }
 
 .table.sticky thead tr:nth-child(1) th {
@@ -159,7 +156,7 @@ table thead tr th {
     }
 
     &:before {
-      background-color: var(--backgroundColor);
+      background-color: var(--compensateShadowColor);
     }
 
   }
@@ -184,7 +181,7 @@ table thead tr th:first-child {
   border-top-left-radius: var(--tableBorderRadius);
 
   &:before {
-    box-shadow: -3px 0 var(--backgroundColor);
+    box-shadow: -1px 0 var(--compensateShadowColor);
   }
 
   &:after {
@@ -204,7 +201,7 @@ table thead tr th:last-child {
   }
 
   &:before {
-    box-shadow: 3px 0 var(--backgroundColor);
+    box-shadow: 1px 0 var(----compensateShadowColor);
   }
 
   &:after {
