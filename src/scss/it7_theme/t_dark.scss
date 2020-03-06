@@ -1,26 +1,19 @@
 .dark {
 	--backgroundColor: var(--dark40);
+	--backgroundColor: var(--dark60);
 	--color: var(--neutral40);
 
 
-	--tableTheadBackground: var(--neutral60);
-	--tableTheadColor: var(--neutral20);
-
-
-	--tableTbodyBackground: var(--dark20);
-	--tableTbodyColor: var(--light50);
-
-	--tableTfootBackground: var(--neutral60);
-	--tableTfootColor: var(--neutral20);
+	
 
 	--componentBoxShadowColor: var(--shadow20);
 
 
-	--tableTbodyTrBoxShadow: 0 18px 2px -18px var(--light05), 0 1px var(--light05);	
+	
 
 	
 
-	--strippedBg: var(--shadow10);
+	
 	
 
 	--buttonBackground: var(--neutral80);
@@ -44,6 +37,8 @@
 
 	--inputValidColor: var(--success60);
 
+	--switchBackgroundColor: var(--light20);
+
 
 
 	
@@ -53,10 +48,7 @@
 
 	[class*="accent"] {
 		//--checkboxAccent: var(--accent60);
-		--tableTheadBackground: var(--accent80);
-		--tableTheadColor: var(--accent20);
-		--tableTfootBackground: var(--accent80);
-		--tableTfootColor: var(--accent40);
+		
 		--buttonBackground: var(--accent80);
 		--buttonColor: var(--accent20);
 		--buttonAccent: var(--accent60);
@@ -66,10 +58,7 @@
 
 	[class*="primary"] {
 		//--checkboxAccent: var(--danger60);
-		--tableTheadBackground: var(--primary80);
-		--tableTheadColor: var(--primary20);
-		--tableTfootBackground: var(--primary60);
-		--tableTfootColor: var(--primary20);
+		
 		--buttonBackground: var(--primary80);
 		--buttonColor: var(--primary20);
 		--buttonAccent: var(--primary60);
@@ -79,10 +68,7 @@
 
 	[class*="danger"] {
 		//--checkboxAccent: var(--danger60);
-		--tableTheadBackground: var(--danger80);
-		--tableTheadColor: var(--danger20);
-		--tableTfootBackground: var(--danger60);
-		--tableTfootColor: var(--danger40);
+		
 		--buttonBackground: var(--danger80);
 		--buttonColor: var(--danger20);
 		--buttonAccent: var(--danger60);
@@ -92,10 +78,7 @@
 
 	[class*="success"] {
 		//--checkboxAccent: var(--success60);
-		--tableTheadBackground: var(--success80);
-		--tableTheadColor: var(--success20);
-		--tableTfootBackground: var(--success60);
-		--tableTfootColor: var(--success20);
+		
 		--buttonAccent: var(--success60);
 		--buttonBackground: var(--success80);
 		--buttonColor: var(--success20);
@@ -105,10 +88,7 @@
 
 	[class*="warning"] {
 		//--checkboxAccent: var(--warning60);
-		--tableTheadBackground: var(--warning80);
-		--tableTheadColor: var(--warning20);
-		--tableTfootBackground: var(--warning80);
-		--tableTfootColor: var(--warning40);
+		
 		--buttonAccent: var(--warning60);
 		--buttonBackground: var(--warning80);
 		--buttonColor: var(--warning20);

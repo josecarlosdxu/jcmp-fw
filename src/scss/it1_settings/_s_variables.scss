@@ -12,11 +12,14 @@
   --spacing-05: 36px;
 
   --buttonMinWidth: calc(var(--spacing-05) * 3);
-  --buttonBorderRadius: calc(var(--spacing-02) / 2);
-  --tableBorderRadius: var(--spacing-02);
+  
+ 
+  --buttonBorderRadius: var(--spacing-01);
+  --tableBorderRadius: var(--spacing-01);
+  
 
   --stepsFontSize: 1.25rem;
-  --stepsRuleHeight: 0.2rem;
+  --stepsRuleHeight: 0.3rem;
 
 }
 
