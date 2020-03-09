@@ -3,14 +3,14 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const HtmlWebpackHotPlugin = require('html-webpack-hot-plugin');
+//const HtmlWebpackHotPlugin = require('html-webpack-hot-plugin');
 
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const htmlHotPlugin = new HtmlWebpackHotPlugin({ hot: true,});
+//const htmlHotPlugin = new HtmlWebpackHotPlugin({ hot: true,});
 
 
 
@@ -28,7 +28,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
+    //new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
         template: 'src/index.html',
@@ -37,7 +37,7 @@ module.exports = {
         encabezamiento: 'Webpack',
       }
     }),
-    htmlHotPlugin,
+    //htmlHotPlugin,
     new MiniCssExtractPlugin({filename: "css/style.css"}),
     
 
@@ -55,6 +55,8 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
+              
+              
               // options...
             }
           }
@@ -62,9 +64,9 @@ module.exports = {
     }]
   },
   devServer: {
-    before(app, server) {
+   /* before(app, server) {
        htmlHotPlugin.setDevServer(server)
-    },
+    },*/
     
    
     contentBase: path.join(__dirname, 'dist'),

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= titulo %></title>
   </head>
-  <body class="no- dark" >
+  <body class="no-dark" >
     <h1 class="p-sm"><%= encabezamiento%></h1>
     
     <svg class="hidden">
@@ -68,7 +68,7 @@
         <div class="elem center dark20">dark20</div>
       </section>
     </article>
-    <article class="hidden">
+    <article class="no-hidden">
       <section class="list mt-sm pb-sm">
         <input type="checkbox" class="success" id="checkbox"><label for="checkbox" class="pl-xs">label</label>
         <input type="checkbox" class="ml-xs" id="checkbox2"><label for="checkbox2" class="pl-xs">label</label>
@@ -82,7 +82,7 @@
         <input type="checkbox" disabled class="switch ml-xs" id="switch2"><label for="switch2" disabled class="pl-xs">label</label>
       </form>
     </article>
-    <article class="no-hidden">
+    <article class="no- hidden">
       <section class="list mt-sm pb-sm">
         <button type="button" class="button danger60">Button</button>
         <button type="button" class="button primary60">Button</button>
@@ -92,7 +92,7 @@
         <button type="button" class="button">Button</button>
       </section>
     </article>
-    <article class="flex-wrap no-hidden">
+    <article class="flex-wrap no- hidden">
       <table class="table sticky primary ml-xs  no-hidden striped mb-xs ">
         <tfoot>
         <tr>
@@ -578,16 +578,16 @@
         </tbody>
       </table>
     </article>
-    <form autocomplete="off" class="hidden p-sm">
-      <input type="text" placeholder="input type=&quot;text&quot;" minlength="4" maxlength="8" required pattern="\S+.*" >
-      <input type="number" placeholder="input type=&quot;number&quot;">
+    <form autocomplete="off" class="no-hidden auto-grid p-sm">
+      <input type="text" placeholder="type=&quot;text&quot;" minlength="4" maxlength="8" required pattern="\S+.*" >
+      <input type="number" placeholder="type=&quot;number&quot;">
       
-      <input type="email" placeholder="input type=&quot;email&quot;" required >
-      <input type="tel" placeholder="input type=&quot;tel&quot;" pattern="[0-9]+">
+      <input type="email" placeholder="type=&quot;email&quot;" required >
+      <input type="tel" placeholder="type=&quot;tel&quot;" pattern="[0-9]+">
       <textarea type="text" placeholder="textarea"></textarea>
       
     </form>
-    <article class="p-sm no- hidden">
+    <article class="p-sm no-hidden">
       <ul class="steps steps-horizontal">
         <li class="step selected"></li>
         <li class="step selected"></li>
@@ -600,6 +600,8 @@
         <li class="step"></li>
       </ul>
     </section>
+     </article>
+ 
   </main>
   <script src="./js/index.js"></script>
 </body>

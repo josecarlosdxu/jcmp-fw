@@ -5,6 +5,7 @@ body {
   --tableTbodyBackground: var(--neutral10);
   --tableTbodyColor: var(--shadow50);
   --tableTfootBackground: var(--neutral20);
+  --tableTfootBackground: var(--shadow10);
   --tableTfootColor: var(--neutral60);
   --tableBoxShadow: 1px 1px 8px var(--componentBoxShadowColor), 0 0 0 1px var(--componentBoxShadowColor);
   --tableTbodyTrBoxShadow: 0 18px 2px -18px var(--shadow05), 0 1px var(--shadow03);
@@ -111,27 +112,11 @@ table td {
 .table tfoot {
   color: var(--tableTfootColor);
   position: relative;
-  z-index: 1;
 
   tr th {
     background-color: var(--tableTfootBackground);
   }
 
-  /*&:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    z-index: 2;
-    width: calc(100% - 1px);
-    height: calc(100% - 1px);
-    border: 1px solid var(--dark20);
-    border-top: none;
-    opacity: 0.1;
-    border-bottom-left-radius: var(--tableBorderRadius);
-    border-bottom-right-radius: var(--tableBorderRadius);
-  }*/
 }
 
 .table.sticky thead tr:nth-child(1) th {

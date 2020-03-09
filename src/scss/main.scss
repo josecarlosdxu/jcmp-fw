@@ -9,3 +9,33 @@
 @import "it9_utils/utils";
 
 
+.test{
+	
+	background-color: grey;
+	padding: 1em;
+    color: #d9480f;
+}
+
+.test2-cont {
+	font-size: 0;
+	counter-reset: test2;
+}
+.test2 {
+	
+	background-color: rgba(0,0,0,0.3);
+	display: inline-block;
+	width:80px;	
+	vertical-align: top;
+	text-align-last: center;
+
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.5) inset;
+	&:before {
+		font-size: 1rem;
+		content: counter(test2);
+		counter-increment: test2;
+		display: inline-block;
+		padding: 1em;
+
+	}
+
+}

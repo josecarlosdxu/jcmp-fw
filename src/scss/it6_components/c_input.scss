@@ -1,53 +1,54 @@
 :root {
-
 	--inputBackgroundColor: white;
 	--inputBorderColor: var(--shadow30);
 	--inputErrorColor: var(--danger60);
 	--inputValidColor: var(--success60);
-
 }
 
-input:not([type="radio"]):not([type="checkbox"])[type=number] { 
-  -moz-appearance: textfield;
+input:not([type="radio"]):not([type="checkbox"])[type=number] {
+	// -moz-appearance: textfield;
 }
 
-input[type=number]:hover::-webkit-inner-spin-button {  
-    
-    height: 40px;
-    position:absolute;
-    right:1px;
-    top:0;
-    opacity: 0.5;
-    /*&:after {
-    	content:"";
-    	opacity:1;
-    	display: block;
-    	position: absolute;
-    	top: 0;
-    	left:0;
-    	height:20px;
-    	width:20px;
-    }*/
-    
+input[type=number]:hover::-webkit-inner-spin-button {
+	height: 40px;
+	position: absolute;
+	right: 1px;
+	top: 0;
+	opacity: 0.5;    /*&:after {
+	    	content:"";
+	    	opacity:1;
+	    	display: block;
+	    	position: absolute;
+	    	top: 0;
+	    	left:0;
+	    	height:20px;
+	    	width:20px;
+	    }*/
 }
 
-input[type=number]{  
-	
-    
-   
-    
+input[type=number] {
 }
 
 input:not([type="radio"]):not([type="checkbox"]),textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	display: inline-block;
 	background-color: var(--inputBackgroundColor);
-	color:inherit;
-	padding: var(--spacing-02) var(--spacing-03) var(--spacing-03);
+	color: inherit;
+	padding: calc(var(--spacing-02) + 1px) var(--spacing-03) var(--spacing-03);
 	border-radius: var(--spacing-01);
 	border: 1px solid var(--inputBorderColor);
+	height: 2.75rem;
+	//margin-bottom: var(--spacing-02);
+	//margin-right: var(--spacing-02);
+	width: auto;
+}
+
+textarea {
 	min-height: 2.75rem;
+	height: auto;
+	padding-top: 0.6rem;
 }
 
 input:not([type="radio"]):not([type="checkbox"]) {
@@ -63,15 +64,12 @@ input[placeholder]:not(:placeholder-shown):invalid {
 }
 
 :not(output):-moz-ui-invalid {
-
 	background-color: var(--inputErrorBackgroundColor) !important;
-	color:var(--inputErrorColor) !important;
+	color: var(--inputErrorColor) !important;
 	border-color: var(--inputErrorColor) !important;
-	box-shadow:  0 0 1px 1px var(--inputErrorColor) inset;
+	box-shadow: 0 0 1px 1px var(--inputErrorColor) inset;
 	background-image: var(--redCross);
 }
-
-
 
 /*input:invalid:not([type="radio"]):not([type="checkbox"]) {
 	background-color: red;
@@ -83,6 +81,6 @@ input:required:valid:not([type="radio"]):not([type="checkbox"]) {
 	background-image: var(--greenCheckSVG);
 	background-color: var(--inputSuccessBackgroundColor);
 	border-color: var(--inputValidColor);
-	box-shadow:  0 0 1px 1px var(--inputValidColor) inset;
+	box-shadow: 0 0 1px 1px var(--inputValidColor) inset;
 	color: var(--inputValidColor);
 }

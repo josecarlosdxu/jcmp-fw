@@ -2,26 +2,35 @@
 	counter-reset: steps;
 
 	.step {
-		font-size: var(--stepsFontSize);
+		font-size: var(--stepsFontSize); // min 0.8rem
 	}
 
 	.step::before {
 		counter-increment: steps;
 		content: counter(steps);
-		display: inline-block;
+		display: inline-flex;
 		vertical-align: top;
 		text-align: center;
 		position: relative;
-		padding: 0.5em;
-		background-color: var(--tableTfootBackground);
-		color: var(--tableTfootColor);
+		padding-top: 0.5em;
+		background-color: var(--neutral40);
+		color: var(--buttonColor);
 		border-radius: 50%;
-		min-width: 1em;
-		line-height: 1;
-		box-sizing: content-box;
+		align-items: flex-start;
+		justify-content: center;
+		min-width: 2.5em;
+		min-height: 2.5em;
+		box-sizing: border-box;
 		border: var(--spacing-01) solid var(--backgroundColor);
 	}
 
+}
+
+
+@-moz-document url-prefix() {
+	.steps .step::before {
+		padding-top: 0.4em;
+	}
 }
 
 .steps-horizontal {
@@ -35,7 +44,7 @@
 		font-size: inherit;
 		display: block;
 		height: var(--stepsRuleHeight);
-		background-color: var(--tableTfootBackground);
+		background-color: var(--buttonBackground);
 		width: calc(100% - 1.8em);
 		position: absolute;
 		left: 0.5em;
@@ -55,7 +64,7 @@
 				background-color: green;
 				transform-origin: 0;
 				transition: none;
-				left: -0.25em;
+				left: -0.3em;
 				z-index: 0;
 			}
 
