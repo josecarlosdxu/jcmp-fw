@@ -2,4 +2,5 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   grid-gap: 0.75rem;
+  grid-auto-flow: row dense;
 }

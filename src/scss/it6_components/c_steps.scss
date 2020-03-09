@@ -2,7 +2,8 @@
 	counter-reset: steps;
 
 	.step {
-		font-size: var(--stepsFontSize); // min 0.8rem
+		font-size: var(--stepsFontSize);
+		// min 0.8rem
 	}
 
 	.step::before {
@@ -13,8 +14,8 @@
 		text-align: center;
 		position: relative;
 		padding-top: 0.5em;
-		background-color: var(--neutral40);
-		color: var(--buttonColor);
+		background-color: var(--stepBackgroundColor);
+		color: var(--stepColor);
 		border-radius: 50%;
 		align-items: flex-start;
 		justify-content: center;
@@ -26,11 +27,11 @@
 
 }
 
-
 @-moz-document url-prefix() {
 	.steps .step::before {
 		padding-top: 0.4em;
 	}
+
 }
 
 .steps-horizontal {
@@ -38,13 +39,14 @@
 	align-items: center;
 	justify-content: space-between;
 	min-width: min-content;
+
 	&:before,
 	.step:not(:first-child):after {
 		content: "";
 		font-size: inherit;
 		display: block;
 		height: var(--stepsRuleHeight);
-		background-color: var(--buttonBackground);
+		background-color: var(--stepBackgroundColor);
 		width: calc(100% - 1.8em);
 		position: absolute;
 		left: 0.5em;
@@ -61,7 +63,6 @@
 
 			&:after {
 				transform: scaleX(0);
-				background-color: green;
 				transform-origin: 0;
 				transition: none;
 				left: -0.3em;
@@ -74,9 +75,9 @@
 
 	.step.selected:before,
 	.step.selected:after {
-		background-color: var(--inputValidColor);
+		background-color: var(--stepSelectedBackgroundColor);
 		transition: background-color 0.2s 0.4s, color 0s 0.4s;
-		color: white;
+		color: var(--stepSelectedColor);
 	}
 
 	.step.selected:after {
@@ -84,9 +85,12 @@
 		transition: transform 0.2s 0.2s;
 	}
 
-	.step.selected + .step:not(.selected):before {
-		background-color: var(--primary60);
-		color: white;
+	.step.selected + .step:not(.selected) {
+		&:before {
+			background-color: var(--stepActiveBackgroundColor);
+			color: var(--stepActiveColor);
+		}
+
 	}
 
 }

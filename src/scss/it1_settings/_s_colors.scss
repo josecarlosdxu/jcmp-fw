@@ -9,8 +9,8 @@
 	--success10:hsl(var(--successH), 80%, 93%);
 	--success20:hsl(var(--successH), 80%, 80%);
 	--success40:hsl(var(--successH), 60%, 60%);
-	--success60:hsl(var(--successH), 80%, 36%);
-	--success80:hsl(var(--successH), 100%, 20%);
+	--success60:hsl(var(--successH), 60%, 40%);
+	--success80:hsl(var(--successH), 40%, 20%);
 	// --------------------
 	--primary10:hsl(var(--primaryH), 80%, 95%);
 	--primary20:hsl(var(--primaryH), 90%, 85%);
@@ -21,14 +21,14 @@
 	--danger10:hsl(var(--dangerH), 100%, 90%);
 	--danger20:hsl(var(--dangerH), 100%, 85%);
 	--danger40:hsl(var(--dangerH), 65%, 67%);
-	--danger60:hsl(var(--dangerH), 83%, 45%);
+	--danger60:hsl(var(--dangerH), 70%, 45%);
 	--danger80:hsl(var(--dangerH), 100%, 28%);
 	// --------------------
-	--accent10:hsl(var(--accentH), 50%, 95%);
-	--accent20:hsl(var(--accentH), 50%, 87%);
-	--accent40:hsl(var(--accentH), 50%, 70%);
-	--accent60:hsl(var(--accentH), 50%, 50%);
-	--accent80:hsl(var(--accentH), 50%, 33%);
+	--accent10:hsl(var(--accentH), 40%, 95%);
+	--accent20:hsl(var(--accentH), 40%, 87%);
+	--accent40:hsl(var(--accentH), 40%, 70%);
+	--accent60:hsl(var(--accentH), 40%, 50%);
+	--accent80:hsl(var(--accentH), 40%, 33%);
 	// --------------------
 	--warning10:hsl(var(--warningH), 90%, 90%);
 	--warning20:hsl(var(--warningH), 90%, 80%);
@@ -57,6 +57,9 @@
 	--shadow50:rgba(0, 0, 0, 0.50);
 
 
+    --light01:rgba(255, 255, 255, 0.01);
+    --light02:rgba(255, 255, 255, 0.02);
+    --light03:rgba(255, 255, 255, 0.03);
     --light05:rgba(255, 255, 255, 0.05);
 	--light10:rgba(255, 255, 255, 0.10);
 	--light20:rgba(255, 255, 255, 0.20);

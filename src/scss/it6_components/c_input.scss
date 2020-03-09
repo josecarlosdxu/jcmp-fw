@@ -30,9 +30,9 @@ input[type=number] {
 }
 
 input:not([type="radio"]):not([type="checkbox"]),textarea {
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	appearance: none;*/
 	display: inline-block;
 	background-color: var(--inputBackgroundColor);
 	color: inherit;
@@ -40,8 +40,7 @@ input:not([type="radio"]):not([type="checkbox"]),textarea {
 	border-radius: var(--spacing-01);
 	border: 1px solid var(--inputBorderColor);
 	height: 2.75rem;
-	//margin-bottom: var(--spacing-02);
-	//margin-right: var(--spacing-02);
+	
 	width: auto;
 }
 
@@ -56,7 +55,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: calc(100% - var(--spacing-01)) center;
-	background-size: var(--spacing-04);
+	background-size: calc(var(--spacing-04) - var(--spacing-01));
 }
 
 input[placeholder]:not(:placeholder-shown):invalid {
@@ -69,6 +68,11 @@ input[placeholder]:not(:placeholder-shown):invalid {
 	border-color: var(--inputErrorColor) !important;
 	box-shadow: 0 0 1px 1px var(--inputErrorColor) inset;
 	background-image: var(--redCross);
+
+}
+
+input[type="number"]:not(output):-moz-ui-invalid {	
+	background-image: none;
 }
 
 /*input:invalid:not([type="radio"]):not([type="checkbox"]) {
@@ -83,4 +87,18 @@ input:required:valid:not([type="radio"]):not([type="checkbox"]) {
 	border-color: var(--inputValidColor);
 	box-shadow: 0 0 1px 1px var(--inputValidColor) inset;
 	color: var(--inputValidColor);
+}
+
+
+.dark input:not([type="radio"]):not([type="checkbox"]), .dark textarea {
+
+	border-width:  2px; 
+}
+
+.dark input:required:valid:not([type="radio"]):not([type="checkbox"]) {
+	border-width:  1px;
+}
+
+.dark :not(output):-moz-ui-invalid {
+	border-width:  1px !important;
 }

@@ -2,53 +2,41 @@
 	--backgroundColor: var(--dark40);
 	--backgroundColor: var(--dark60);
 	--color: var(--neutral40);
-
-
-	
-
 	--componentBoxShadowColor: var(--shadow20);
-
-
-	
-
-	
-
-	
-	
-
 	--buttonBackground: var(--neutral80);
 	--buttonAccent: var(--neutral60);
 	--buttonColor: var(--neutral20);
 	--buttonHoverBackground: var(--neutral60);
 	--buttonHoverColor: var(--neutral10);
-
-
-
-	--inputBackgroundColor: var(--neutral80);
-
+	--inputBackgroundColor: transparent;
 	--inputErrorBackgroundColor: hsla(var(--dangerH), 83%, 45%, 0.3);
-
 	--inputSuccessBackgroundColor: hsla(var(--successH), 80%, 36%, 0.2);
-
-
-	--inputBorderColor: var(--light10);
-
+	--inputBorderColor: var(--light30);
 	--inputErrorColor: var(--danger60);
-
 	--inputValidColor: var(--success60);
-
 	--switchBackgroundColor: var(--light20);
 
 
+	--stepBackgroundColor: var(--neutral80);
+	--stepColor: var(--neutral40);
+	--stepSelectedBackgroundColor: var(--success80);
+	--stepSelectedColor: var(--success40);
+	--stepActiveBackgroundColor: var(--primary80);
+	--stepActiveColor: var(--primary40);
 
-	
 
 
+	::-webkit-input-placeholder {
+		color: var(--light20);
+	}
 
+	::-moz-placeholder {
+		color: var(--light20);
+		opacity: 1;
+	}
 
 	[class*="accent"] {
 		//--checkboxAccent: var(--accent60);
-		
 		--buttonBackground: var(--accent80);
 		--buttonColor: var(--accent20);
 		--buttonAccent: var(--accent60);
@@ -58,7 +46,6 @@
 
 	[class*="primary"] {
 		//--checkboxAccent: var(--danger60);
-		
 		--buttonBackground: var(--primary80);
 		--buttonColor: var(--primary20);
 		--buttonAccent: var(--primary60);
@@ -68,7 +55,6 @@
 
 	[class*="danger"] {
 		//--checkboxAccent: var(--danger60);
-		
 		--buttonBackground: var(--danger80);
 		--buttonColor: var(--danger20);
 		--buttonAccent: var(--danger60);
@@ -78,7 +64,6 @@
 
 	[class*="success"] {
 		//--checkboxAccent: var(--success60);
-		
 		--buttonAccent: var(--success60);
 		--buttonBackground: var(--success80);
 		--buttonColor: var(--success20);
@@ -88,7 +73,6 @@
 
 	[class*="warning"] {
 		//--checkboxAccent: var(--warning60);
-		
 		--buttonAccent: var(--warning60);
 		--buttonBackground: var(--warning80);
 		--buttonColor: var(--warning20);
